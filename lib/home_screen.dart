@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:simple_app/about.dart';
+import 'package:simple_app/profile.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -30,11 +30,11 @@ class HomePage extends StatelessWidget {
           onPressed: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => const AboutScreen()),
+              MaterialPageRoute(builder: (context) => const ProfileScreen()),
             );
           },
           child: Text(
-            'Go to about screen',
+            'Go to profile screen',
             style: TextStyle(
               color: Colors.white,
             ),
