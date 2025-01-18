@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -143,12 +144,119 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             Container(
+              padding: EdgeInsets.only(left: 14, right: 14, bottom: 14),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(12),
                 border: Border.all(color: Colors.grey),
               ),
               child: Column(
-                children: [],
+                spacing: 10,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  ListTile(
+                    minLeadingWidth: 0,
+                    contentPadding: EdgeInsets.zero,
+                    leading: CircleAvatar(
+                      backgroundImage: NetworkImage(
+                          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa8pgIzxGc3bOC1BG4YVcFoFZe_i2uIyid3LB9IaSKkEZMoP11MoaAVpP3e1r0vIhFhQA&usqp=CAU'),
+                    ),
+                    title: Text('Rakib / Teacher'),
+                    subtitle: Text('UX Designer'),
+                    trailing: Icon(Icons.keyboard_arrow_up_rounded),
+                  ),
+                  Text(
+                    'Mobile Application Development',
+                    style: GoogleFonts.poppins(
+                      color: Colors.black,
+                    ),
+                  ),
+                  Row(
+                    spacing: 12,
+                    children: [
+                      Expanded(
+                        child: Container(
+                          padding: EdgeInsets.symmetric(
+                              horizontal: 12, vertical: 12),
+                          decoration: BoxDecoration(
+                            color: Colors.green,
+                            borderRadius: BorderRadius.circular(12),
+                            gradient: LinearGradient(
+                              colors: [
+                                Color(0xff04bdcf),
+                                Color(0xff0092f1),
+                              ],
+                            ),
+                          ),
+                          child: Column(
+                            spacing: 7,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                '24,760',
+                                style: GoogleFonts.poppins(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Text(
+                                'Already Enrolled',
+                                style: GoogleFonts.poppins(
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        child: Container(
+                          padding: EdgeInsets.symmetric(
+                              horizontal: 12, vertical: 12),
+                          decoration: BoxDecoration(
+                            color: Colors.red,
+                            borderRadius: BorderRadius.circular(12),
+                            gradient: LinearGradient(
+                              colors: [
+                                Color(0xffa336aa),
+                                Color(0xfff77792),
+                              ],
+                            ),
+                          ),
+                          child: Column(
+                            spacing: 7,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                '18 hours',
+                                style: GoogleFonts.poppins(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Text(
+                                'Over 8 weeks',
+                                style: GoogleFonts.poppins(
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+
+                  // Text(
+                  //   'This is Roboto Light',
+                  //   style: TextStyle(
+                  //       fontFamily: 'Roboto', fontWeight: FontWeight.w300),
+                  // ),
+                  // Text(
+                  //   'This is Roboto Medium',
+                  //   style: TextStyle(
+                  //       fontFamily: 'Roboto', fontWeight: FontWeight.w500),
+                  // ),
+                ],
               ),
             ),
           ],
