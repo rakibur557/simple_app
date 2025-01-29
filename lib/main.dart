@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:simple_app/home_screen.dart';
+import 'package:simple_app/list_and_grid.dart';
 import 'package:simple_app/login_screen.dart';
 import 'package:simple_app/profile.dart';
 
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(fontFamily: 'Roboto'),
-      home: HomeScreen(),
+      home: ListOrGrid(),
     );
   }
 }
