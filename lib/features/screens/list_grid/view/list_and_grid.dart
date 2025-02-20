@@ -11,6 +11,7 @@ class ListOrGrid extends StatelessWidget {
         backgroundColor: Colors.blue,
         title: Text("Grid View Example"),
       ),
+      endDrawer: Drawer(),
       body: GridView.builder(
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
