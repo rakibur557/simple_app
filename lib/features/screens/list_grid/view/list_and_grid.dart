@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:simple_app/details.dart';
+import 'package:simple_app/features/screens/details/view/details.dart';
 
 class ListOrGrid extends StatelessWidget {
   const ListOrGrid({super.key});

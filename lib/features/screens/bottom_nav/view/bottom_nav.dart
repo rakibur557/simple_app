@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:simple_app/home_screen.dart';
-import 'package:simple_app/list_and_grid.dart';
-import 'package:simple_app/login_screen.dart';
-import 'package:simple_app/profile.dart';
+import 'package:simple_app/features/screens/home/view/home_screen.dart';
+import 'package:simple_app/features/screens/list_grid/view/list_and_grid.dart';
+import 'package:simple_app/features/screens/login/view/login_screen.dart';
+import 'package:simple_app/features/screens/profile/view/profile.dart';
 
 class BottomNavExample extends StatefulWidget {
   const BottomNavExample({super.key});
